@@ -1,0 +1,1 @@
+The corrected code includes a cleanup function within the `useEffect` hook's return statement. This function, in this case, cancels the asynchronous operation before the component unmounts. The `fetch` call is cancelled using an AbortController, ensuring the asynchronous operation cleans up properly.  This prevents potential memory leaks and unexpected behavior.
